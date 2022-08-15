@@ -58,6 +58,14 @@ p {
   margin: auto;
 }
 
+.figure-style-middle{
+  float: center;
+  border-color: #333;
+  padding: 10px;
+  width: 40%;
+  margin: 
+}
+
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:150%;-webkit-text-size-adjust:150%}body{margin:0}
