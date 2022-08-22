@@ -31,6 +31,13 @@ body {
   display: block; 
 }
 
+.gallery__img_app {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: grid; 
+  
+}
 .gallery__item--1 {
   margin: 0;
   padding: 0;
