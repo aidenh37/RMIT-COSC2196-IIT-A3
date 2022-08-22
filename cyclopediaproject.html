@@ -106,7 +106,12 @@ To enable the application to be produced at a steady but satisfactory pace, the 
 
 <p></p>
 <br>
-<hr>   
+<hr> 
+
+<figure class = "figure-style">
+    <img src="images/cycleapp.jpg" align="right" width="100%">
+    <figcaption>Cyclopedia in use</figcaption>
+</figure>
 <p><b>Mobile Applications </b></p>
 The iOS application, as well as the Android application, will be a primary method of data input and provide utility to the user by accessing the main database stored in the backend and displaying the data: 
 
@@ -125,45 +130,39 @@ Both mobile applications must allow users the opportunity to create an account w
 Stage 1 mobile applications will not include any form of point-to-point navigation at this time, although provisions should be made to allow this feature to be added shortly after release. 
 
 Both mobile applications should make use of modern development technologies, including Swift and Java programming languages, and Xcode or Android Studio IDEs respectively. 
+<p></p>
+<br>
+<hr>
 
+<p><b>Web Application </b></p>
 
+<figure class = "figure-style">
+    <img src="images/DALL·E 2022-08-22 23.16.43 - cyclists lappy.png" width="100%" alt="closed cycleway">
+        <figcaption>Cyclopedia web DALL.E</figcaption>
+</figure>
 
-<p><b>Description</b></p>
-    <p>In the project’s final form, a user will be able to visit a website or download a mobile phone application to access a searchable database of bicycle lanes or view them on a map.<br> 
-    Bicycle lanes will be categorised based on several factors, such as: </p>
+Although not intended to be utilised in full as part of Stage 1, the web application will be a key component of the project, as it will be the primary means subscribers (organisations) will access, analyse and export the data collected by users through the mobile applications. 
+
+Similar to the mobile applications, the web application will provide utility to subscribers by accessing the main database stored in the backend and displaying the data: 
         <ul>
-            <li>Ride quality (surface type; maintenance issues) </li>
-            <li>Safety (lighting; visibility to other road users) </li>
-            <li>Positioning (off-road cycleway in a quiet park; or narrow lane next to car doors?)  </li>
-            <li>Hazards (construction work; slippery leaves in Autumn)  </li>
-            <li>Priority given (Do I need to stop frequently?) </li>
-            <li>Speed (How fast do I feel comfortable riding?) </li>
-            <li>Width (Australian standard or Dutch standard?) </li>
+            <li>Data must be searchable and returned from the backend in a user-friendly manner </li>
+            <li>Data must be viewable on a map, or in a list  </li>
         </ul>
 
-        <figure class = "figure-style-40">
-            <img src="images/cycleclosed.jpg" width="100%" alt="closed cycleway">
-                <figcaption>photo by diamond geezer(CC BY 2.0)<a href = "https://www.flickr.com/photos/dgeezer/24777083939/in/photolist-DKt2Qp-dpwHZA-dpwJ3j-dpwzjB-9Pd6b2-h7ZMi1-5mZm4f-6viqSN-sDJko-cc7Mau-8kUcs5-24yLQew-6LGuDH-6iit36-wPxZ55-5FMsGf-T183WA-24bs8LL-5FMsG5-5FMsFU-RMbo9S-Yr8iPS-7mL6TB-9tJvpb-M7GFfz-5o8neU-cc7WNo-wPyx6w-716mWC-4oBSx2-Rb6snm-74FRwY-nDXJKF-nE3kD1-nG32SP-nE3kh9-nE3h3y-nEeCkh-nnLbBu-nG2Xdi-nDXFJv-H7tqh-nnKWCL-a5gqPZ-nEfxYk-fME9KC-q76TGH-nDXGdX-qLsegt-dcQ3dX"> Closed cycleway</a></figcaption>
-        </figure>
+        Further to this, the web application must be capable of providing overviews for each type of data stored, as dictated by the backend. For example, a subscriber must be able to view the number of reports received in a chosen geographical area on a graph, presented by months of the year. The exact options to be made available are yet to be determined. 
+       
+The web application must follow a similar user interface design to the Android application, and allow subscribers to not only access the data stored but also manage their user account. Unlike the mobile applications, the web application will not make use of SSO at this stage, nor will subscribers be able to manage organisation accounts for use by multiple staff. These are features that would be considered shortly after release, so provisions should be made in development. 
+
+The web application must make use of modern web technologies such as HTML5, CSS3, JavaScript, PHP and MySQL. 
+
+       
         
+<hr>
+<p><b>Backend – Data Storage </b></p>
 
-    <p>Users will not only be able to view this data – they will have the opportunity to check-in to bicycle lanes and leave a short review with real-time ratings for key data metrics as above. This functionality will be similar to the website and app PlugShare, which enables electric vehicle owners to find chargers, check-in when in use and leave a review or even a simple note advising other EV owners the current status of a given charging station. </p>
+The backend will primarily serve as a means of storing the immense amount of data expected to be collected by the mobile applications, as well as personal information collected to maintain user accounts. It has been decided the backend will be based on the Google Cloud Platform, meaning all infrastructure maintenance is largely outsourced and can match demand at any given moment. 
 
-    <p>Crowdsourced data could potentially be monetised and sold to councils and other infrastructure stakeholders such as Transport for NSW, as statistics such as those gathered by this application are extremely valuable in determining maintenance issues that otherwise go unnoticed, or where to install upgrades to the infrastructure. Data could also be used to aid step-by-step navigation with safer cycling routes to their destination. </p>
-
-    <p>There is also scope to expand the project to include other useful points of interest to bicycle riders, such as the location and availability of parking with imagery. </p>
-
-<p><b>Tools and Technology</b></p>
-
-    <p>Initially, the ‘application’ may consist of a simple Google My Maps document with annotations on a map – however moving forward the application will be accessed via a web browser, or through a downloadable mobile phone application published on the Apple App Store or Google Play Store. </p>
-    
-    <p>The web application will require a modern browser such as Apple’s Safari or Google Chrome to run. The mobile phone applications will require a modern smartphone on the most recent relevant operating system to run. Both the mobile and web applications would utilise modern mapping APIs to display familiar, user-friendly map images. On iOS, Apple’s MapKit can be used on-device at no extra cost. Similarly, on Android, Google Maps’ API can be used in-app for no extra cost provided the application is available for free on the Google Play Store. On the web, Apple’s MapKit JS is available for no extra cost up to 25,000 service calls, along with Mapbox which is free to the same number of service calls. </p>
-
-    <p>The application will require a cloud server to accommodate the large amount of data it is expected to host, and to handle the storage of user reviews and information. Possible options include Amazon Web Services or Google Cloud Platform. </p>
-
-    <p>The web application will need to be designed using HTML/CSS for the layout, possibly including a front-end framework like Bootstrap5 or SASS. For the front-end scripting, JavaScript would be used, possibly also incorporating frameworks and libraries like jQuery, Angular, React, or Vue.js. Depending on the cloud services being used, a server-side language or framework like Node.js or PHP may be required. An IDE such as Visual Studio, or VS Code will also be used. </p>
-
-    <p>An Apple Mac computer is required for development and testing purposes for the iOS application. Programming languages such as Objective-C or Swift would be used to program the app, and Apple’s iOS developer tools would need to be used for development. These tools primarily include the XCode IDE and possibly XCode Cloud which can be used for development in teams. A US$99 fee applies to access the Apple Developer Program, which is required to publish applications to the App Store. </p>
+For Stage 1 of the project, all data will be stored locally in Sydney or Melbourne if available. All data must be stored under Australian security and privacy regulations, as appropriate. Initially, it is expected three databases will be required to make the product operational, however, the expectation should be that more databases will be necessary. These three databases and some of their core values are outlined below, subject to change: 
 
     <figure class = "figure-style-40">
         <img src="images/cycleapp.jpg" width="100%" alt="cyclist using app">
