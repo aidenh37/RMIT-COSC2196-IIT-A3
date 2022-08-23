@@ -13,6 +13,8 @@
 <div class="topnav">
     <a class="active" href="index.html">Home</a>
     
+    
+    
     <!--Team profile drop down---->
     <a href="cyclopediaproject.html">Cyclopedia Project</a>
     <a href="tools.html">Tools</a>
@@ -49,11 +51,8 @@
             
         </div> 
     </div>
-    <a href="References.html">References</a>
-
-        </div> 
+    </div> 
     </div>
-
    </div>
 <!-- end of header and menu bar-->
 <!--top text-->
@@ -64,7 +63,7 @@
         <a href  ="https://github.com/aidenh37/RMIT-COSC2196-IIT-A3">GitHub Public Repository</a></p>
         <p> 
             <a href ="https://aidenh37.github.io/RMIT-COSC2196-IIT-A3">Github Website</a></p>
-    <hr>
+  
     <!--Images grid-->
     <div class="grid_container">
         <div class="gallery">
@@ -213,9 +212,127 @@
     <!--last div for main-text css-->
     </div>
 
+    <div class = "main-text">
+      <h3>Aims</h3>
+      
+      
+      <figure class = "figure-style">
+          <img src="images/HOME.png" align="right" width="100%">
+      </figure>
+      
+      
+      <p>The project aims to develop a platform that aids the uptake of cycling as a method of transportation. A significant shift away from driving is needed to reduce worsening traffic congestion in our cities (Norman 2017), save individuals and businesses money, reduce carbon emissions, and improve general health and wellbeing (Better Health 2022). It is for these reasons that we aim to create an application that will be genuinely helpful for both existing and new cyclists. 
 
+      <h3>Goals</h3>
+      <p>The single most important feature of the application will be the ability to report potential obstructions and other cycling conditions. This will allow users access to real-time information about the conditions and quality of certain routes. For example: Does this route contain potholes or tree roots? Is the route uncomfortable to ride? Does it require riding in fast-moving traffic? The goal is to give cyclists an excellent platform to be informed and to inform others about hazards, conditions, and possibly even benefits of certain bicycle paths and lanes.<br><br>
+        One of the desired effects of Cyclopedia is to facilitate council maintenance reports concerning cycle routes. Reports and summaries could be sold to local governments and other organisations, outlining hazards and maintenance that need to be attended to on important cycle routes. Ideally, this will lead to an increase in the quality and safety of bicycle routes, which converts into increased uptake when handled appropriately. Currently, many cycle routes are not maintained to the same high standards as roadways, and the goal is to have a platform where these problems can be identified and forwarded to the relevant organisations to be rectified.  </p>
 
+        <h3>Plans and Progress</h3>
+        <p>We plan to implement the project with mobile applications on both major platforms – iOS and Android - as the frontend and using Google Cloud Platform for the backend – including management of the large amount of data expected to be collected. </p>
+<hr>
+        <h3>Mobile Applications</h3>
+        <figure class = "figure-style">
+          <img src="images/ROUTE.png" align="right" width="100%">
+      </figure>
+        <p>The primary means of interaction with the mobile applications will be through a map. This map will highlight bike lanes and other cycling paths based on data available, and provide the user with the option to tap those routes for more information. Depending on the screen size and/or format, it may also be able to give them a preview of the information on the main map screen. 
+          If the user taps one of the cycling routes, a page with more information about that route will appear. This page will include other users’ check-ins, including potential hazards reported, and any other information that is available to the program such as imagery, safety and comfort scores, and other relevant cycling conditions or comments (for example, “Path has a 15% slope”, “Riding on dirt is necessary”, “Path is very narrow in some places”). This information can be extremely helpful to riders if they are considering using a particular route; especially for the elderly or those with children, the ability to research the conditions of cycling paths will be very helpful</p>
+          <p>This page will also have the option for the user to do 3 different things. The first is rate the path on different metrics such as safety and quality. The second is report cycling conditions for that path, as mentioned above. The third, and arguably most important, option is to report hazards and areas that need maintenance. For example, if there is a tree root in a dangerous location, if the path has become eroded in an area, or if there are potholes anywhere along the path. The user will be able to report problems like these to alert other users. This may include the ability to upload pictures, and also using the phone’s GPS to check the location of the user (to avoid fraudulent reports). One of the main parts of the business model of this app will be selling this information to government departments and other organizations to aid them with their maintenance reports and other administration, etc. <br><br>
 
+          This app will also have a ‘favourites’ section, which will list the user’s favourite bike lanes, that they have either favourited manually, or just the ones that they frequently visit. This will enable to user to find them quicker, especially as they are more likely to want to see them.  
+          
+          When users enter the app for the first time, they will need to authenticate and/or create an account. We plan to use OAuth services for this purpose, which will make our app more convenient by allowing people to sign in with Facebook, Google, Twitter, etc. Ideally there will also be an option to sign in simply with an email address and password.  
+          
+          In the application, there will be a settings page that allows the user to specify several different settings. These will include: </p>
+          <ul>
+              <li>Whether to push updates to notifications and/or email. </li>
+              <li>Permissions for accessing the phone’s GPS. </li>
+              <li>Permissions for storing user’s data. </li>
+              <li>Permissions for accessing the phone’s camera. </li>
+              <li>Language settings </li>
+            </ul>
+            <p>There will also be a user profile page in our app that (optionally) allows the user to enter information about themselves. Information such as gender, age, address, etc. Will allow the app to give them a better user experience, as well as being able to better and more accurately use the data that is collected (for example if people over 50 consistently rate the track more difficult, making sure we don’t recommend cycle tracks in Perth to someone who lives in Sydney etc.). </p>
+      <p></p>
+      <br>
+      <hr> 
+      <h3>Web Applications</h3>
+      <figure class = "figure-style">
+        <img src="images/DALL·E 2022-08-22 23.16.43 - cyclists lappy.png" align="right" width="100%">
+    </figure>
+      <p>Our plan for this project also includes a web application. This web application will be used by local governments and other organizations to access the data that we collect from cyclists. This could include downloadable data/databases, and the ability to access summaries and other representations of the data. <br><br>
+
+        For example, it may include a map with points on the map specifying where hazards have been reported, or which cycling lanes are the most popular or highly reviewed. It will also include graphs representing similar data, such as number of problems reported per lane, number of cyclists using different areas, and possibly even number of cyclists from different demographics. <br><br>
+        
+        This web application will require a sign in by the organisation. When an organisation or local government registers with us, we will give them a login and create an account, which they can use to log in and access the data that they are qualified to access.  <br><br>
+        
+        Before the user has logged in, the website will have information and pages about our services, including information about pricing and services for local governments and other organisations, contact details, and information and advertising about our app for people wishing to download it.  </p>
+    <p></p>
+    <br>
+    <hr>
+<h3>Research</h3>
+<p>While doing this project, we researched and investigated a number of different map software/API options. Google Maps, Apple MapKit and Mapbox are the options that we looked into. 
+</p>
+<table>
+  <tr>
+    
+    <th>Map</th>
+    <th>Pros</th>
+    <th>Cons</th>
+  </tr>
+  <tr>
+      <td>Google Maps</td>
+      
+      
+      <td><ul>
+          <li>Native integration with Android apps.</li>
+          <li>Popular and therefore familiar to users and easy to use.</li>
+          <li>Free up to a certain limit (approx. 30,000 requests/month)</li>
+          </ul>
+          </td>
+
+      <td><ul>
+              <li>More expensive than Mapbox for very large amounts of use..</li>
+              <li>Less options for customization.</li>
+          </ul></td>
+      
+  </tr>
+  <tr>
+    <td>Apple MapKit</td> 
+    <td><ul>
+      <li>Free to use for iOS app development</li>
+      <li>Native integration with iOS apps.</li>
+      <li>Popular and therefore familiar to iOS users and easy to use.</li>
+      </ul></td>
+
+      <td><ul>
+          <li>Has a cost for non-apple use</li>
+          <li>Less options for customization</li>
+          <li>Not able to use for Android.</li>
+          </ul></td>
+   
+  </tr>
+  <tr>
+    <td>Mapbox  </td>
+    <td><ul>
+      <li>More options for customization.</li>
+      <li>Free up to a certain limit (approx. 30,000 requests/month), and relatively inexpensive afterwards</li>
+      </ul>
+  </td>
+  
+  <td><ul>
+      <li>Does not support native integration with iOS or Android apps.</li>
+      <li>Less familiar to users and therefore harder to use.</li>
+      <li>Not free on iOS (like MapKit).</li>
+      </ul></td>
+  </tr>
+</table> (Mapbox n.d.; Google Maps Platform n.d.; Apple Developer n.d. a)<br>
+<p>There are 4 main options here:
+  <ul><li>Use Google Maps for Android and Apple MapKit for iOS. </li>
+      <li>Use Mapbox for Android and Apple MapKit for iOS. </li>
+      <li>Use Mapbox for both applications. </li>
+      <li>Use Google Maps for both applications. </li>
+  </ul>
+  Considering the above research, we decided that the best option is to go with Google Maps for Android and Apple MapKit for iOS. This is both a cheap option (MapKit is free) and is also accessible (users will be more familiar with these options) and easy to implement, as both apps will be using the native and recommended map software. 
+</p>
 
 
 
