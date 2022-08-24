@@ -307,11 +307,6 @@ float: left;
 overflow: hidden;
 }
 
-.dropdown .active {
-  background-color: #293592;
-  color: white;
-}
-
 /* Dropdown button */
 .dropdown .dropbtn-active {
 font-size: 16px;
@@ -335,8 +330,8 @@ padding: 17px 16px;
 background-color: inherit;
 font-family: inherit; /* Important for vertical align on mobile phones */
 margin: 0; /* Important for vertical align on mobile phones */
-
 }
+
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
 background-color: grey;
