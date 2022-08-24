@@ -236,43 +236,47 @@
         <figure class = "figure-style">
           <img src="images/ROUTE.png" align="right" width="100%">
       </figure>
-        <p>The primary means of interaction with the mobile applications will be through a map. This map will highlight bike lanes and other cycling paths based on data available, and provide the user with the option to tap those routes for more information. Depending on the screen size and/or format, it may also be able to give them a preview of the information on the main map screen. 
-          If the user taps one of the cycling routes, a page with more information about that route will appear. This page will include other users’ check-ins, including potential hazards reported, and any other information that is available to the program such as imagery, safety and comfort scores, and other relevant cycling conditions or comments (for example, “Path has a 15% slope”, “Riding on dirt is necessary”, “Path is very narrow in some places”). This information can be extremely helpful to riders if they are considering using a particular route; especially for the elderly or those with children, the ability to research the conditions of cycling paths will be very helpful</p>
-          <p>This page will also have the option for the user to do 3 different things. The first is rate the path on different metrics such as safety and quality. The second is report cycling conditions for that path, as mentioned above. The third, and arguably most important, option is to report hazards and areas that need maintenance. For example, if there is a tree root in a dangerous location, if the path has become eroded in an area, or if there are potholes anywhere along the path. The user will be able to report problems like these to alert other users. This may include the ability to upload pictures, and also using the phone’s GPS to check the location of the user (to avoid fraudulent reports). One of the main parts of the business model of this app will be selling this information to government departments and other organizations to aid them with their maintenance reports and other administration, etc. <br><br>
+        <p>The primary means of interaction with the mobile applications will be through a map. This map will highlight bike lanes and other cycling paths based on data available and provide the user with the option to tap those routes for more information. Depending on the screen size and/or format, it may also be able to give them a preview of the information on the main map screen.  </p>
 
-          This app will also have a ‘favourites’ section, which will list the user’s favourite bike lanes, that they have either favourited manually, or just the ones that they frequently visit. This will enable to user to find them quicker, especially as they are more likely to want to see them.  
-          
-          When users enter the app for the first time, they will need to authenticate and/or create an account. We plan to use OAuth services for this purpose, which will make our app more convenient by allowing people to sign in with Facebook, Google, Twitter, etc. Ideally there will also be an option to sign in simply with an email address and password.  
-          
-          In the application, there will be a settings page that allows the user to specify several different settings. These will include: </p>
+          <p>If the user taps one of the cycling routes, a page with more information about that route will appear. This page will include other users’ check-ins, including potential hazards reported, and any other information that is available to the program such as imagery, safety and comfort scores, and other relevant cycling conditions or comments (for example, “Path has a 15% slope”, “Riding on dirt is necessary”, “Path is very narrow in some places”). This information can be extremely helpful to riders if they are considering using a particular route; especially for the elderly or those with children, the ability to research the conditions of cycling paths will be very helpful.  </p>
+
+          <p>This page will also include input fields, as determined by the data types being stored in the backend. Some basic examples of the kinds of data user input that would be required include perceived safety ratings; ride comfort and quality ratings; route condition ratings, and; obstruction or incident information. To elaborate - if a user of the mobile application was to come across a tree root in a dangerous location, or if the path has become eroded in an area, the user will be able to report issues like these to alert other users and possibly the organisation responsible. </p>
+
+          <p>This will include the ability to upload imagery and use smartphones’ GPS coordinates to check the location of the user against the image, to avoid fraudulent reports. A primary part of the business model of the platform will be selling this information to local governments and other organisations to aid them in recording maintenance jobs and other statistics-gathering exercises. </p>
+
+            <p>The mobile applications will also include a ‘Favourites’ section, which will list the user’s favourite cycling routes, such as a commute to/from work. This enables the user to locate route information quickly - especially useful when in a rush to head to work.  </p>
+
+            <p>When users enter the mobile application for the first time, they will need to authenticate and/or create an account. We plan to use OAuth services for this purpose, which will make our app more convenient by allowing people to sign in with either their Apple ID or Google Account. This is a necessary precaution to prevent fraudulent reports and guarantee the validity of the data collected. </p>
+
+            <p>In the application, there will be a settings page that allows the user to configure parts of how the application performs. These will include options such as: </p>
+          </p>
           <ul>
-              <li>Whether to push updates to notifications and/or email. </li>
-              <li>Permissions for accessing the phone’s GPS. </li>
-              <li>Permissions for storing user’s data. </li>
-              <li>Permissions for accessing the phone’s camera. </li>
-              <li>Language settings </li>
+              <li>Allowing push notifications or email updates </li>
+              <li>Communication preferences for app support </li>
+              <li>Location permission </li>
+              <li>Data storage permission </li>
+              <li>Camera permission </li>
+              <li>Language </li>
             </ul>
-            <p>There will also be a user profile page in our app that (optionally) allows the user to enter information about themselves. Information such as gender, age, address, etc. Will allow the app to give them a better user experience, as well as being able to better and more accurately use the data that is collected (for example if people over 50 consistently rate the track more difficult, making sure we don’t recommend cycle tracks in Perth to someone who lives in Sydney etc.). </p>
-      <p></p>
+
+            <p>A user profile page will also be included in our application that allows the user to enter information about themselves, including gender, age, addresses, route preferences and more. Information provided will allow the app to provide a better experience, as well as increase the quality of data collected. For example, if users over the age of 50 consistently rate a route as more difficult, this information may be utilised in improving the route by the responsible organisation. Personal preferences could also act to filter out irrelevant information from search results and other parts of the application, for example, a user who specifies they are located within the City of Sydney is unlikely to want to see search results for the City of Melbourne. </p>
+            
+            <p>All personal information will be sent and received using industry-standard security practices and stored in the relevant backend database on a secure Google Cloud Platform server in Australia. We will also aim to allow users to download and/or delete personal information at any time unassisted. </p>
       <br>
       <hr> 
       <h3>Web Applications</h3>
       <figure class = "figure-style">
         <img src="images/DALL·E 2022-08-22 23.16.43 - cyclists lappy.png" align="right" width="100%">
     </figure>
-      <p>Our plan for this project also includes a web application. This web application will be used by local governments and other organizations to access the data that we collect from cyclists. This could include downloadable data/databases, and the ability to access summaries and other representations of the data. <br><br>
-
-        For example, it may include a map with points on the map specifying where hazards have been reported, or which cycling lanes are the most popular or highly reviewed. It will also include graphs representing similar data, such as number of problems reported per lane, number of cyclists using different areas, and possibly even number of cyclists from different demographics. <br><br>
-        
-        This web application will require a sign in by the organisation. When an organisation or local government registers with us, we will give them a login and create an account, which they can use to log in and access the data that they are qualified to access.  <br><br>
-        
-        Before the user has logged in, the website will have information and pages about our services, including information about pricing and services for local governments and other organisations, contact details, and information and advertising about our app for people wishing to download it.  </p>
-    <p></p>
-    <br>
+      <p>Our plan for this project also includes a web application. This web application will be used by local governments and other organisations (also known as subscribers) to access the data that we collect from users of the mobile applications. This could include downloadable data/databases, and the ability to access summaries and other representations of the data. </p>
+      <p>For example, it may include a map with points on the map specifying where hazards have been reported, or which cycling routes are the most popular or highly reviewed. It will also include graphs representing similar data, such as the number of issues reported per route, the number of cyclists using different areas, and possibly even the number of cyclists from different demographics or localities. </p>
+      <p>This web application will also require an account to use. When a subscriber registers with us, they will be prompted to create an account, which they can use to log in and access the data that they are qualified to access. There is also the possibility of creating a permissions system that enables an organisation to hold multiple accounts with us, allowing individual staff to create their own accounts. </p>
+      <p>The application will be accessed via the product’s future website that will include information about our services, including pricing, and services available for local governments and other organisations, plus contact details and general marketing of the mobile applications for the general public. </p>
+       <br>
+   
     <hr>
 <h3>Research</h3>
-<p>While doing this project, we researched and investigated a number of different map software/API options. Google Maps, Apple MapKit and Mapbox are the options that we looked into. 
-</p>
+<p>While working on this project so far, we have researched and investigated several different map software/API options. Google Maps, Apple MapKit and Mapbox are some of the most popular mapping APIs available, and we are extremely likely to use one of these services.</p>
 <table>
   <tr>
     
@@ -327,14 +331,13 @@
       </ul></td>
   </tr>
 </table> (Mapbox n.d.; Google Maps Platform n.d.; Apple Developer n.d. a)<br>
-<p>There are 4 main options here:
-  <ul><li>Use Google Maps for Android and Apple MapKit for iOS. </li>
-      <li>Use Mapbox for Android and Apple MapKit for iOS. </li>
-      <li>Use Mapbox for both applications. </li>
-      <li>Use Google Maps for both applications. </li>
+
+<p>Considering the many different options, there are 2 that stand out.  
+  <ul><li>Using Google Maps for all 3 applications </li>
+      <li>Using Google Maps for the Android and Web application, and Apple MapKit for the iOS application </li>
+      <li>Using Mapbox for all 3 applications </li>
   </ul>
-  Considering the above research, we decided that the best option is to go with Google Maps for Android and Apple MapKit for iOS. This is both a cheap option (MapKit is free) and is also accessible (users will be more familiar with these options) and easy to implement, as both apps will be using the native and recommended map software. 
-</p>
+  <p>Considering the above research, we decided that the best option is to go with Google Maps for Android, Apple MapKit for iOS, and Google Maps for the web application. This is both a cheap option (as MapKit is free) and is also accessible (users will be more familiar with these options). In addition, it will not be too difficult to implement, as both mobile apps will be using the native and recommended map software, and using Google Maps for the web application reduces the difficulty of development as we are already using it for Android.  </p>
 
 <hr>
  
@@ -342,21 +345,20 @@
 <figure class = "figure-style">
   <img src="images/cybersecuritykeyboard.jpg" align="right" width="100%">
 </figure>
-<p>For privacy and security reasons, the app will have the option to specify whether the user’s location and cycling history is stored with their account (as mentioned above). This is important idea and is so for the same reason that the information and cyber security of this app must be very good. If this type of data is leaked, it could lead to very bad implications for the people that have used the app and allowed their data to be stored.  </p>
-<p>There are many options for cloud storage and backend services. Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform are all prominent and popular options for cloud storage and computing, and all have different pros and cons associated with them. Considering we will likely already be using Google Maps for significant parts of the app; it seemed like Google Cloud Platform will be the best way to go for backend services. This reduced the number of separate companies that we rely on, and also increases the ease of integration for our entire project.</p>
+<p>In keeping with industry standards, the platform will include some configuration surrounding the collection and use of personal information (as mentioned above). Users will also have the option to download and remove their data at any time, without assistance. This is an important feature and the security of the data collected is paramount to the project, as one of the project’s primary aims is to improve the reputation of cycling as a means of transportation. If the type of data we collect and store is compromised, it could lead to negative implications not only for the organisations and users but also for the project’s reputation and the reputation of commuter cycling as an activity. </p>
+<p>There are many options for cloud storage and backend services. Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform are all prominent and popular options for cloud storage and computing, and all have different pros and cons associated with them. Considering we will likely already be using Google Maps for significant parts of the app; it seemed like Google Cloud Platform will be the best way to go for backend services. This reduced the number of separate companies that we rely on and also increases the ease of integration for our entire project. </p>
+<p>Google Cloud Platform is also a trusted vendor in cloud computing in Australia, with servers available for use locally, we can reduce latency and assure users of our applications that any data collected is stored to the same standards as some modern banks. </p>
 
 <hr>
 
 <h3>Market Research</h3>
-<p>Research on the state of cycling in Australia & quality of cycle lanes etc 
-  Research on similar existing projects/products:
-  <ul><li>Snap Send Solve </li>
-      <li>Plugshare </li>
-      <li>Live Traffic NSW </li>
-      <li>Citymapper/Bikemap/Strava </li>
-      <li>LGA maps (think about Canberra as an example) </li>
-  </ul>
-</p><br>
+<p>There are many existing products and services that perform a similar function to what we are planning to accomplish with Cyclopedia. </p>
+
+<p>Snap Send Solve is a tool that allows its users to notify local governments or other organisations of issues and outstanding maintenance (Snap Send Solve n.d.). It allows users to report many different kinds of issues, such as graffiti, noise, abandoned vehicles, animals, and others. What makes our platform different is that Cyclopedia has more features specific to cyclists and the infrastructure they utilise. It will also contain more map features specific to cycling routes. </p>
+
+<p>Another class of apps that will be competitors to Cyclopedia is map-based platforms such as Citymapper, Bikemap, Strava, and of course Google Maps and Apple Maps. These apps include many features such as navigation, fitness tracking, and some social tools like user forums. However, Cyclopedia will have more of a focus on helping cyclists find their way and assisting local governments to improve infrastructure, although some features are being considered for future implementation such as step-by-step navigation or ride tracking for fitness purposes. </p>
+
+</p>
 <hr>
 
 
@@ -367,13 +369,30 @@
   <img src="images/figma.png" align="right" width="100%">
 </figure>
 
-<p>We have used Figma for prototyping in this project. Figma is a prototyping tool that allows you to create mock-up iPhone and Android apps and run them on a ‘simulator’; all in your browser or through the Figma app that is available on both Android and iOS. During one of our team meetings, we were discussing what artefacts we wanted to produce for the assignment, and we decided that we should draw up a layout of what the app should look like. During this discussion Aiden brought up using a platform like Figma to create a prototype. Aiden was keen to build this himself so we agreed that he would be the one to design and create the app using Figma</p>
-<p> After that team meeting Adam wanted to look into Figma and see how it works and what it is mainly used for. At this point Adam was not intending on building a prototype as this was designated to Aiden, but as this is something Adam is interested in, he wanted to understand how it worked. Adam first started by looking at some of the community designs to get an idea of how Figma works and see how other people have used the program to design apps. He then went to Youtube and watched a few videos on the basics of Figma. After watching the videos and playing with the community designs, he had a fairly good understanding of how to create a basic design and how to link pages together to emulate how the app would work.</p>
-<p>Adam started by creating a login screen. He had a few attempts at this due to it being the first time he had created something using Figma and was still learning how it works. He also wanted to incorporate the colour scheme from the logo into the app. He did this by using the blue that was in the logo as the background colour for the buttons on the login screen. Adam then moved onto the home screen; this is where he decided what pages/areas the app should include. He decided to add a Home, Profile, Favourites and Settings buttons to the bottom of the app.</p>
-<p>The main screen consists mostly of a map view, with a search bar at the top. At this point we had another team meeting, everyone was happy with the prototype Adam had created and Aiden asked if Adam could continue with the work he had started. Aiden also asked Adam if he could add a few more features so the prototype could be used in the filming that was scheduled the next day for assignment 5. After that meeting Adam then added the map of the cycle path in Bicentennial Park at Homebush to the home page, as well as the report an issue/damage button. </p>
+<p>As part of producing some early plans for the project, we have utilised the web-based design and prototyping tool Figma. Figma allows its users to create application mock-ups for a variety of devices and screen sizes and execute them in an emulator for testing purposes; all in any modern web browser. Figma was decided upon in a group meeting after a quick search online, as their free period provides enough use of the tool for our purposes this early into the project. Adam was the primary author of the designs produced, as he was able to learn how the tool is utilised using some basic YouTube tutorials, and produce several previews of how the mobile applications should look. </p>
+
+<p>As part of establishing a basic design for prototyping purposes, an early colour scheme and brand had to be established. This early branding consists of a logo and a matching colour scheme. At this time, the mobile application does not meet Apple’s interface design guidelines, and as such is very likely to change as the product is developed. </p>
+
+<p>At this time the group has completed no other work directly relating to the development of the platform, except for regular meetings and communication on Microsoft Teams, regular updates to our Notion workspace, and the development of this report. More information on our use of these productivity tools can be found under <a href="tools.html">Tools</a>
+
+<hr>
+
+<h3>Future Plans</h3>
+
+<figure class = "figure-style">
+  <img src="images/DALL·futuret.png" align="right" width="100%">
+</figure>
+
+<p>Whilst the current scope of the project (otherwise known as ‘Stage 1’) will not include any functions for handling monetisation and, in turn, subscriptions, the project will require a significant amount of advertising with the intention being to attract users and build the project’s first crowdsourced databases. This will mostly consist of an attractive website as previously mentioned, as well as a professional social media presence on services such as YouTube, Instagram and Twitter.  </p>
+
+<p>A major focus of any initial advertising campaign will be to enable the cycling community to grow. We can accomplish this by also maintaining a strong user community on social media and through our self-hosted forum. The forum will also initially be our primary means of soliciting user feedback. </p>
+
+<p>Whilst not strictly advertising, we would also be planning to begin building genuine relationships with local governments’ staff, cycling community groups, and other people and organisations that are important in the space. Basic safety campaigns could also be considered. </p>
+
+<p>Moving back to the development of the mobile applications, we would be aiming to begin development on at least one platform as soon as the resources are made available to us. As no members of the group have experience in developing mobile applications, this will likely be some time away. Development of the backend would also likely take place at a similar pace. </p>
+<p>Without the skills to progress in constructing the product, our focus as a group going forward will likely lie in building upon our early prototype, and deciding on our design direction. </p>
 
 <hr><br>
-
 
 <!--footer-->
 <footer>

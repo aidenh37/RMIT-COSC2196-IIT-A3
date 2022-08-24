@@ -78,9 +78,9 @@
 </figure>
 
 
-<p>To enable the application to be produced at a steady but satisfactory pace, the project will be built in stages. Initially, planning and production will only consist of the minimum viable product (MVP) which will also be referenced as Stage 1. 
+<p>To enable the application to be produced at a steady but satisfactory pace, the project will be built in stages. Initially, planning and production will only consist of the minimum viable product (MVP) which will also be referenced as Stage 1.  
 
-    <p>Stage 1 of the Cyclopedia application will primarily consist of four major components: The backend, to be developed on the Google Cloud Platform to allow simple multi-platform access; The iOS mobile application, to be developed as a frontend; The Android mobile application, also to be developed as a frontend, and; The web application, developed as a frontend to be designed as a ‘dashboard’ for registered users to access and analyse reported data. 
+    <p>Stage 1 of the Cyclopedia application will primarily consist of four major components: The backend, to be developed on the Google Cloud Platform to allow simple multi-platform access; The iOS mobile application, to be developed as a frontend; The Android mobile application, also to be developed as a frontend, and; The web application, developed as a frontend to be designed as a ‘dashboard’ for registered users to access and analyse reported data.  
     
     Stage 1 will also include several minor components that aim to enhance the user experience, or allow users to fix problems without needing to contact us. These include:
     <ul>
@@ -99,7 +99,7 @@
         <li>A forum, for use by the communities we operate in for general discussion around cycling, as well as user support and feedback </li>
         <li>A Customer Relationship Management (CRM) utility, for storing subscriber contact and sales information going forward </li>
     </ul>
-    <p>As the size of the database held will initially be too small to effectively sell to organisations, efforts will be prioritised in building a user base. The product will initially be completely free for all – the web application will only be available to registered users, primarily staff, and will not have any use until it is decided to begin selling the data obtained to organisations. As such, no payment processing will be required – however, billing provisions should be made. 
+    <p>As the size of the database held will initially be too small to effectively sell to organisations, efforts will be prioritised in building a user base. The product will initially be completely free for all – the web application will only be available to registered users, primarily staff, and will not have any use until it is decided to begin selling the data obtained to organisations. As such, no payment processing will be required – however, provisions should be made to be able to include billing in the future.  
 
 <p></p>
 <br>
@@ -125,7 +125,7 @@
 
 <p>Stage 1 mobile applications will not include any form of point-to-point navigation at this time, although provisions should be made to allow this feature to be added shortly after release. 
 
-Both mobile applications should make use of modern development technologies, including Swift and Java programming languages, and Xcode or Android Studio IDEs respectively. 
+<p>Both mobile applications should make use of modern development technologies, including Swift and Java programming languages, and Xcode or Android Studio IDEs respectively. 
 <p></p>
 <br>
 <hr>
@@ -146,9 +146,9 @@ Both mobile applications should make use of modern development technologies, inc
 
 <p>Further to this, the web application must be capable of providing overviews for each type of data stored, as dictated by the backend. For example, a subscriber must be able to view the number of reports received in a chosen geographical area on a graph, presented by months of the year. The exact options to be made available are yet to be determined.</p> 
        
-<p>The web application must follow a similar user interface design to the Android application, and allow subscribers to not only access the data stored but also manage their user account. Unlike the mobile applications, the web application will not make use of SSO at this stage, nor will subscribers be able to manage organisation accounts for use by multiple staff. These are features that would be considered shortly after release, so provisions should be made in development. 
+<p>The web application must follow a similar user interface design to the Android application and allow subscribers to not only access the data stored but also manage their user account. Unlike the mobile applications, the web application will not make use of SSO at this stage, nor will subscribers be able to manage organisation accounts for use by multiple staff. These are features that would be considered shortly after release, so provisions should be made in development. 
 
-The web application must make use of modern web technologies such as HTML5, CSS3, JavaScript, PHP and MySQL. 
+<p>The web application must make use of modern web technologies such as HTML5, CSS3, JavaScript, PHP and MySQL. 
 
        
         
@@ -157,17 +157,17 @@ The web application must make use of modern web technologies such as HTML5, CSS3
 
 <p>The backend will primarily serve as a means of storing the immense amount of data expected to be collected by the mobile applications, as well as personal information collected to maintain user accounts. It has been decided the backend will be based on the Google Cloud Platform, meaning all infrastructure maintenance is largely outsourced and can match demand at any given moment. 
 
-<p>For Stage 1 of the project, all data will be stored locally in Sydney or Melbourne if available. All data must be stored under Australian security and privacy regulations, as appropriate. Initially, it is expected three databases will be required to make the product operational, however, the expectation should be that more databases will be necessary. These three databases and some of their core values are outlined below, subject to change: 
+<p>For Stage 1 of the project, all data will be stored locally in Sydney or Melbourne if available. All data must be stored under Australian security and privacy regulations, as appropriate. Initially, it is expected three databases will be required to make the product operational, however, the expectation should be that more databases will be necessary. These three databases and some of their core values are outlined below, subject to change:  
 
 <ul>
     <li>User Accounts </li>
-        <ul>First name, last name, mobile number, email address, date of birth, residential postcode. </ul>
+        <ul>First name, last name, mobile number, email address, date of birth, residential postcode </ul>
         <ul>Passwords (or similar) if required should not be stored as plaintext – an investigation into implementation required. </ul>
     <li>Subscriber accounts </li>
         <ul>First name, last name, organisation name, mobile number, email address, postal address, billing address. </ul>
         <ul>Passwords should not be stored as plaintext – an investigation into implementation required.</ul>
         
-    <li>City of Sydney data (subject to change)  </li>
+    <li>Bike Lane Data  </li>
         <ol>Hidden values include: </ol>
             <ol>&nbsp&nbsp&nbsp&nbsp&nbspUnique identifier  </ol>
             <ol>&nbsp&nbsp&nbsp&nbsp&nbspSubmission time </ol>
@@ -194,7 +194,8 @@ The web application must make use of modern web technologies such as HTML5, CSS3
     <ol>&nbsp&nbsp&nbsp&nbsp&nbspGeneral comments </ol>
 </ul>
 
-<p>No group members are familiar with the technologies needed to develop the backend at this stage – as such, further investigation is required. 
+<p>As part of stage 1, we would trial the app in the city of Sydney only. If successful we would easily be able to expand to include all major cities, and eventually the whole of Australia. </p>
+<p>No group members are familiar with the technologies needed to develop the backend at this stage – as such, further investigation is required. </p> 
 <br>
 <hr>
 
@@ -204,14 +205,32 @@ The web application must make use of modern web technologies such as HTML5, CSS3
     <img src="images/hammers.jpg" align="right" width="100%">
 </figure>
 
-<p>Several different tools and technologies would be required if we were to take this project to completion.</p>
-<p>For project management, we are currently using Notion and Microsoft Teams along with the Microsoft Office 365 tools. For prototyping we have found Figma to be a very useful tool and would likely continue to use this in the future. If we were to continue using these tools, it would incur costs as follows: Notion: $8 per user per month and Figma: $12 per user per month (although free for students and educators). As our team is not fully satisfied with the user experience in Microsoft 365, we would be considering using an alternative such as Slack ($6.67 per user per month) or Zoom ($17.50 - $23 per user per month, depending on the plan). </p>
-<p>For practical ease of development and convenience, many of the tools that we plan to use are from Google. For the backend cloud storage, we plan to use Google Cloud Platform. The pricing of this is dependent on usage and other specifications. For example, a single 30GiB Cloud SQL Database (MySQL or PostgreSQL) costs USD $42.09 per month (with a 1-year commitment) (Google Cloud n.d.). </p>
-<p>For the Android and iOS apps, there are a number of tools we could use for both. These include OAuth (‘sign in with Google/Facebook etc.’) for fast and secure authentication, and possibly also Stripe (or a similar tool) for processing payments. We would also need some good ways to test the application. This could be a specific testing tool like LambdaTest ( USD $30+/month for 2+ parallel tests) (LambdaTest n.d.), or physical devices (which would also incur a large cost), possibly also in conjunction with Vysor (Enterprise license is USD $2/user/month) (Vysor n.d.). </p>
-<p>The Google Maps API will most likely be used for the Android application. The Google Maps API is free to use up to 30,000 requests per month (Google Maps Platform n.d.) and has many options for native integration with Android apps using the Maps SDK for Android, and the Android Studio IDE. The Kotlin and Java programming languages would be used, as they are the standard for Android programming. Google Play Console registration costs $25, and is required to publish Android apps. </p>
-<p>For the iOS app, Apple’s Mapkit is a likely candidate for a map API. It has many features, and supports native integration with iOS apps (Apple Developer n.d. a). Developing the iOS application will take place using the XCode IDE, which is Apple’s primary development tool (Apple Developer n.d. b). The Swift programming language would be used, being the primary programming language for iPhone app development. An Apple Mac laptop is required for this. Based on a MacBook Air M1, these would cost $1500 each (Apple n.d.). In addition, the Apple Developer program needs to be enrolled in in order to publish iOS apps. This incurs a cost of USD $99 per year, or $299 a year for the enterprise program (Apple Developer n.d. c). </p>
-<p>For the web application, a map API would need to be used, likely Google Maps or Apple MapKit as we are already using it for the respective smartphone apps. The development of the Website would likely be done using an IDE such as VS Code, and programming languages such HTML, CSS, JavaScript, PHP (or another server-side language or framework such as Node.js), possibly with other web frameworks and libraries such as jQuery, React, or Vue.js. </p>
-<p>Our team has very limited experience with any of the above tools and technologies. None of us have ever used a Map API, or developed an Android or iOS application before. Most of us have experience with basic web development, however, and we also have some experience with general programming, for example in Java and Python, and some basic experience using IDEs. In addition, throughout this course we have gained experience using Figma, which we used as our primary prototyping tool, Notion, and Microsoft Teams and Office 365, which we have used extensively for collaboration on our work.  </p>
+<p>Many different tools and technologies are expected to be utilised in the continued development of this project. </p>
+
+<p>For project management, we are currently using Notion and Microsoft Teams along with other applications in the Microsoft 365 suite. For prototyping purposes, we have largely decided on Figma as it is an excellent application and would likely continue to satisfy our needs throughout development. If we were to continue using these tools, it would incur costs as follows: </p>
+
+<ul><li>Notion: USD 8 per user per month </li>
+    <li>Figma: USD 12 per user per month (free for students and educators) </li>
+</ul>
+
+<p>As our team is not fully satisfied with the user experience of the Microsoft 365 suite, particularly Microsoft Teams, we would be considering alternatives such as Slack (USD 6.67 per user per month) or Zoom (USD 17.50-23 per user per month, depending on the plan). Provided the group continue to study at RMIT Online, the Microsoft 365 suite, including Teams, is free to use. </p>
+
+<p>For practical ease of development and convenience, many of the tools that we plan to use are from Google. For the backend cloud storage, we plan to use the Google Cloud Platform. The pricing of this is dependent on usage and other specifications. For example, a single 30GiB Cloud SQL Database (MySQL or PostgreSQL) costs USD 42.09 per month (with a 1-year commitment) (Google Cloud n.d.). </p>
+
+<figure class = "figure-style">
+  <img src="images/HOME.png" align="right" width="100%">
+</figure>
+
+<p>For the Android and iOS apps, there are several tools we could use for both. These include OAuth (‘sign in with Google/Apple etc.’) for fast and secure authentication, and possibly also Stripe (or a similar tool) for processing payments. We would also require professional methods to test the application. This could be a specific testing tool like LambdaTest (from USD 30 per month for 2+ parallel tests) (LambdaTest n.d.), or physical devices (which would also incur a large cost), possibly also in conjunction with Vysor (Enterprise license is USD 2 per user per month) (Vysor n.d.). </p>
+
+<p>The Google Maps API will most likely be used for the Android application. The Google Maps API is free to use up to 30,000 requests per month (Google Maps Platform n.d.) and has many options for native integration with Android apps using the Maps SDK for Android and the Android Studio IDE. The Kotlin and Java programming languages would be used, as they are the standard for Android programming. Google Play Console registration costs USD 25 and is required to publish Android apps. </p>
+
+<p>For the iOS app, Apple’s MapKit is a likely candidate for a map API. It has many features and supports native integration with iOS apps (Apple Developer n.d. a). Developing the iOS application will take place using the Xcode IDE, which is Apple’s primary development tool (Apple Developer n.d. b). The Swift programming language would be used, being the primary programming language for iPhone app development. An Apple Mac computer is required for this. Based on a MacBook Air M1, which the group believes to be the best option for our use, would cost a minimum of $1,349 each with a student discount included. (Apple n.d.). In addition, developers must be enrolled in the Apple Developer Program to publish iOS apps on the App Store. This incurs a cost of USD 99 per year, or USD 299 a year for the enterprise program (Apple Developer n.d. c). </p>
+
+<p>For the web application, a map API would need to be used, likely Google Maps, as we are already utilising it within the Android application. The development of the web application would likely involve using an IDE such as VS Code, and programming languages such as HTML, CSS, JavaScript, PHP (or another server-side language or framework such as Node.js), possibly with other web frameworks and libraries such as jQuery, React, or Vue.js.  </p>
+
+<p>Our group has very limited experience with any of the above tools and technologies. None of us has ever used a mapping API or developed an Android or iOS application. Most of us have experience with basic web development, however, and we also have some experience with general programming, for example in Java and Python, and some basic experience using IDEs. In addition, throughout the development of this project, we have gained experience using Figma, which we used as our primary prototyping tool, Notion, and Microsoft Teams and Office 365, which we have used extensively for collaboration on our work. </p>
+
 <hr>
 
 
