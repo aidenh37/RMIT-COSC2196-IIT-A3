@@ -636,10 +636,10 @@
         <!-- Thumbnail images -->
         <div class="row">
             <div class="column">
-                <img class="demo cursor" src="images/Wireframe_2.1.png" style="width:100%" onclick="currentSlide2(1)" alt="1a. User signs in. 1b. The app shows the home screen which is a map of their current location.">
+                <img class="demo2 cursor" src="images/Wireframe_2.1.png" style="width:100%" onclick="currentSlide2(1)" alt="1a. User signs in. 1b. The app shows the home screen which is a map of their current location.">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/Wireframe_2.2.png" style="width:100%" onclick="currentSlide2(2)" alt="2a. User taps a bike route on the map. 2b. The app displays information of the route on the bottom of the screen.">
+                <img class="demo2 cursor" src="images/Wireframe_2.2.png" style="width:100%" onclick="currentSlide2(2)" alt="2a. User taps a bike route on the map. 2b. The app displays information of the route on the bottom of the screen.">
             </div>
         </div> 
     </div>
@@ -710,7 +710,7 @@
     function showSlides2(n) {
         let i;
         let slides = document.getElementsByClassName("mySlides2");
-        let dots = document.getElementsByClassName("demo");
+        let dots = document.getElementsByClassName("demo2");
         let captionText = document.getElementById("caption2");
         if (n > slides.length) {slideIndex2 = 1}
         if (n < 1) {slideIndex2 = slides.length}
@@ -718,7 +718,7 @@
             slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+            dots[i].className = dots[i].className.replace("active", "");
         }
         slides[slideIndex2-1].style.display = "block";
         dots[slideIndex2-1].className += "active";
