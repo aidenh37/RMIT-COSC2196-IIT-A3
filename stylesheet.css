@@ -115,6 +115,13 @@ body {
   transform: translateX(-50%);
 }
 
+.wireframe_slide_images{
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
