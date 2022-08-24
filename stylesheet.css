@@ -200,6 +200,10 @@ body {
   opacity: 0.4;
 }
 
+.demo2 {
+  opacity: 0.4;
+}
+
 .active,
 .demo:hover {
   opacity: 1;
