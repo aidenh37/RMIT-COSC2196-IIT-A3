@@ -663,27 +663,16 @@
 </footer>
 
 <script>
-    let slideIndex1 = 1;
-    let slideIndex2 = 1;
-    
-    showSlides1(slideIndex);
-    showSlides2(slideIndex);
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
     // Next/previous controls
-    function plusSlides1(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function plusSlides2(n) {
+    function plusSlides(n) {
         showSlides(slideIndex += n);
     }
 
     // Thumbnail image controls
-    function currentSlide1(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function currentSlide2(n) {
+    function currentSlide(n) {
         showSlides(slideIndex = n);
     }
 
