@@ -307,6 +307,11 @@ float: left;
 overflow: hidden;
 }
 
+.dropdown .active {
+  background-color: #293592;
+  color: white;
+}
+
 /* Dropdown button */
 .dropdown .dropbtn-active {
 font-size: 16px;
