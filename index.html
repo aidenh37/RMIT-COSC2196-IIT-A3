@@ -150,22 +150,22 @@
     <!-- Thumbnail images -->
     <div class="row">
       <div class="column">
-        <img class="demo cursor" src="images/iPhone 11 Pro Max - 1.png" style="width:100%" onclick="currentSlide(1)" alt="Cyclopedia main landing screen">
+        <img class="slide_thumb cursor" src="images/iPhone 11 Pro Max - 1.png" style="width:100%" onclick="currentSlide(1)" alt="Cyclopedia main landing screen">
       </div>
       <div class="column">
-        <img class="demo cursor" src="images/ROUTE.png" style="width:100%" onclick="currentSlide(2)" alt="Selecting a recent route to report an issue">
+        <img class="slide_thumb cursor" src="images/ROUTE.png" style="width:100%" onclick="currentSlide(2)" alt="Selecting a recent route to report an issue">
       </div>
       <div class="column">
-        <img class="demo cursor" src="images/REPORT.png" style="width:100%" onclick="currentSlide(3)" alt="Filling in details of the report">
+        <img class="slide_thumb cursor" src="images/REPORT.png" style="width:100%" onclick="currentSlide(3)" alt="Filling in details of the report">
       </div>
       <div class="column">
-        <img class="demo cursor" src="images/PROFILE.png" style="width:100%" onclick="currentSlide(4)" alt="Profile information screen">
+        <img class="slide_thumb cursor" src="images/PROFILE.png" style="width:100%" onclick="currentSlide(4)" alt="Profile information screen">
       </div>
       <div class="column">
-        <img class="demo cursor" src="images/FAVOURITES.png" style="width:100%" onclick="currentSlide(5)" alt="Favourite trails">
+        <img class="slide_thumb cursor" src="images/FAVOURITES.png" style="width:100%" onclick="currentSlide(5)" alt="Favourite trails">
       </div>
       <div class="column">
-        <img class="demo cursor" src="images/SETTINGS.png" style="width:100%" onclick="currentSlide(6)" alt="Settings">
+        <img class="slide_thumb cursor" src="images/SETTINGS.png" style="width:100%" onclick="currentSlide(6)" alt="Settings">
       </div>
     </div>
     
@@ -186,7 +186,7 @@
     function showSlides(n) {
       let i;
       let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("demo");
+      let dots = document.getElementsByClassName("slide_thumb");
       let captionText = document.getElementById("caption");
       if (n > slides.length) {slideIndex = 1}
       if (n < 1) {slideIndex = slides.length}

@@ -196,11 +196,11 @@ body {
 }
 
 /* Add a transparency effect for thumnbail images */
-.demo {
+.slide_thumb {
   opacity: 0.4;
 }
 
-.demo2 {
+.slide_thumb2 {
   opacity: 0.4;
 }
 

@@ -594,19 +594,19 @@
         <!-- Thumbnail images -->
         <div class="row">
             <div class="column">
-                <img class="demo cursor" src="images/Wireframe_1.1.png" style="width:100%" onclick="currentSlide(1)" alt="1a. User signs in. 1b. The app shows the home screen which is a map of their current location.">
+                <img class="slide_thumb cursor" src="images/Wireframe_1.1.png" style="width:100%" onclick="currentSlide(1)" alt="1a. User signs in. 1b. The app shows the home screen which is a map of their current location.">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/Wireframe_1.2.png" style="width:100%" onclick="currentSlide(2)" alt="2a. User taps a bike route on the map. 2b. The app displays information of the route on the bottom of the screen.">
+                <img class="slide_thumb cursor" src="images/Wireframe_1.2.png" style="width:100%" onclick="currentSlide(2)" alt="2a. User taps a bike route on the map. 2b. The app displays information of the route on the bottom of the screen.">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/Wireframe_1.3.png" style="width:100%" onclick="currentSlide(3)" alt="3a. User taps 'Report Issue or Damage'. 3b. The app displays a text box asking for a description of the issue or damage including an option to 'upload a photo'.">
+                <img class="slide_thumb cursor" src="images/Wireframe_1.3.png" style="width:100%" onclick="currentSlide(3)" alt="3a. User taps 'Report Issue or Damage'. 3b. The app displays a text box asking for a description of the issue or damage including an option to 'upload a photo'.">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/Wireframe_1.4.png" style="width:100%" onclick="currentSlide(4)" alt="4a. User taps upload a photos. 4b. The app turns the phone camera on for the user to take a photo.">
+                <img class="slide_thumb cursor" src="images/Wireframe_1.4.png" style="width:100%" onclick="currentSlide(4)" alt="4a. User taps upload a photos. 4b. The app turns the phone camera on for the user to take a photo.">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/Wireframe_1.5.png" style="width:100%" onclick="currentSlide(5)" alt="5a. User taps submit. 5b. The app thanks the user for their submission">
+                <img class="slide_thumb cursor" src="images/Wireframe_1.5.png" style="width:100%" onclick="currentSlide(5)" alt="5a. User taps submit. 5b. The app thanks the user for their submission">
             </div>
         </div> 
     </div>
@@ -636,10 +636,10 @@
         <!-- Thumbnail images -->
         <div class="row">
             <div class="column">
-                <img class="demo2 cursor" src="images/Wireframe_2.1.png" style="width:100%" onclick="currentSlide2(1)" alt="1a. User signs in. 1b. The app shows the home screen which is a map of their current location.">
+                <img class="slide_thumb2 cursor" src="images/Wireframe_2.1.png" style="width:100%" onclick="currentSlide2(1)" alt="1a. User signs in. 1b. The app shows the home screen which is a map of their current location.">
             </div>
             <div class="column">
-                <img class="demo2 cursor" src="images/Wireframe_2.2.png" style="width:100%" onclick="currentSlide2(2)" alt="2a. User taps a bike route on the map. 2b. The app displays information of the route on the bottom of the screen.">
+                <img class="slide_thumb2 cursor" src="images/Wireframe_2.2.png" style="width:100%" onclick="currentSlide2(2)" alt="2a. User taps a bike route on the map. 2b. The app displays information of the route on the bottom of the screen.">
             </div>
         </div> 
     </div>
@@ -679,7 +679,7 @@
     function showSlides(n) {
         let i;
         let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("demo");
+        let dots = document.getElementsByClassName("slide_thumb");
         let captionText = document.getElementById("caption");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
@@ -710,7 +710,7 @@
     function showSlides2(n) {
         let i;
         let slides = document.getElementsByClassName("mySlides2");
-        let dots = document.getElementsByClassName("demo2");
+        let dots = document.getElementsByClassName("slide_thumb2");
         let captionText = document.getElementById("caption2");
         if (n > slides.length) {slideIndex2 = 1}
         if (n < 1) {slideIndex2 = slides.length}
